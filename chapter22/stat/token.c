@@ -49,7 +49,7 @@ enum TOKEN_TYPE next_token(void){
 		in_read_char();
 	}
 
-	if (in_cur_char() == EOF) {
+	if (in_next_char() == EOF) {
 		return T_EOF;
 	}
 
