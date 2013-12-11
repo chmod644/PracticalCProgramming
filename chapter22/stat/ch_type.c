@@ -65,8 +65,6 @@ static void init_char_type(void) {
 
 	type_info['"'] = C_DOUBLE;
 	type_info['\''] = C_SINGLE;
-
-	type_info['\t'] = C_WHITE;
 }
 
 
@@ -78,7 +76,7 @@ int is_char_type(int ch, enum CHAR_TYPE kind) {
 	}
 
 	if (ch == EOF) {
-		return kind = EOF;
+		return kind = C_EOF;
 	}
 
 	switch (kind) {
